@@ -1,0 +1,426 @@
+{
+  "next": "http://5ka.ru/api/v2/special_offers/?page=2&records_per_page=10000",
+  "previous": null,
+  "results": [
+    {
+      "id": 73027,
+      "name": "PURINA Корм FRIS.конс.д/вз.соб.г.под.85г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3692140.jpg",
+      "plu": 3692140,
+      "promo": {
+        "id": 1142122848,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-05",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 17
+      },
+      "current_prices": {
+        "price_reg__min": 13.99,
+        "price_promo__min": 11.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 73028,
+      "name": "PURINA Корм FRIS.ягн.в под.д/взр.соб.85г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3692244.jpg",
+      "plu": 3692244,
+      "promo": {
+        "id": 1142122848,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-05",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 17
+      },
+      "current_prices": {
+        "price_reg__min": 13.99,
+        "price_promo__min": 11.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 73029,
+      "name": "PURINA Корм FRIS.кур.в под.д/взр.соб.85г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3692245.jpg",
+      "plu": 3692245,
+      "promo": {
+        "id": 1142122848,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-05",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 17
+      },
+      "current_prices": {
+        "price_reg__min": 13.99,
+        "price_promo__min": 11.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 49626,
+      "name": "Конфеты вафельные с начинкой типа пралине глазированные шоколадом, 35г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/4001937.jpg",
+      "plu": 4001937,
+      "promo": {
+        "id": 1142098225,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 16.99,
+        "price_promo__min": 13.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 73054,
+      "name": "Печенье сахарное \"Традиционное\" 120 гр",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3973181.jpg",
+      "plu": 3973181,
+      "promo": {
+        "id": 1142122848,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-05",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 17
+      },
+      "current_prices": {
+        "price_reg__min": 15.99,
+        "price_promo__min": 13.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 49373,
+      "name": "ЧУПА ЧУПС Карамель XXL TRIO 29г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/59117.jpg",
+      "plu": 59117,
+      "promo": {
+        "id": 1142098225,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 17.25,
+        "price_promo__min": 14.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 49543,
+      "name": "Батончик глазированный нуга с мягкой карамелью шоколадный аромат 40 г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3648578.jpg",
+      "plu": 3648578,
+      "promo": {
+        "id": 1142098225,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 17.0,
+        "price_promo__min": 14.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 49519,
+      "name": "Нуга с арахисом, Шарлиз, 55 г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3608985.jpg",
+      "plu": 3608985,
+      "promo": {
+        "id": 1142098225,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 19.0,
+        "price_promo__min": 15.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 73084,
+      "name": "Изделия кондитерские мучные. Пирожные: БАТОНЧИК ГЛАЗИРОВАННЫЙ \"KIDDAY\"ассорти 40 гр",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/4043596.jpg",
+      "plu": 4043596,
+      "promo": {
+        "id": 1142122848,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-05",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 17
+      },
+      "current_prices": {
+        "price_reg__min": 24.9,
+        "price_promo__min": 15.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 33115,
+      "name": "Жевательная резинка \"Ментос\"со вкусом мяты 15,5 г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3936416.jpg",
+      "plu": 3936416,
+      "promo": {
+        "id": 1143198374,
+        "date_begin": "2020-11-08",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 24.99,
+        "price_promo__min": 17.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 33116,
+      "name": "Жевательная резинка \"Ментос\"со вкусом тутти-фрутти 15,5 г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3936417.jpg",
+      "plu": 3936417,
+      "promo": {
+        "id": 1143198374,
+        "date_begin": "2020-11-08",
+        "date_end": "2020-12-02",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 14
+      },
+      "current_prices": {
+        "price_reg__min": 24.99,
+        "price_promo__min": 17.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29282,
+      "name": "М/М Биотвор.с перс.дет.обог.4,2% 100г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3697379.jpg",
+      "plu": 3697379,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 22.99,
+        "price_promo__min": 18.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29283,
+      "name": "М/М Биотвор.с клуб.дет.обог.4,2% 100г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3697380.jpg",
+      "plu": 3697380,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 22.99,
+        "price_promo__min": 18.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29315,
+      "name": "БЗМЖ биотворог д/питания детей дошк и шк возраста, обогащенный пробиот микроорг Howaru с малиной мдж 4,2% 100 г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/4007833.jpg",
+      "plu": 4007833,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 23.99,
+        "price_promo__min": 18.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 18559,
+      "name": "Вода минеральная природная питьевая столовая негаз \"Легенда Гор \" 0,5 л",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3635119.jpg",
+      "plu": 3635119,
+      "promo": {
+        "id": 1142091316,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 25.9,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 18560,
+      "name": "Вода минеральная природная питьевая столовая газ \"Легенда Гор \" 0,5",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3635130.jpg",
+      "plu": 3635130,
+      "promo": {
+        "id": 1142091316,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 25.9,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29279,
+      "name": "М/М Коктейль мол.у/паст.шоколад.2,3%200г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3695118.jpg",
+      "plu": 3695118,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 29.99,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29280,
+      "name": "М/М Коктейль мол.у/паст.вк.кар.2,3%200г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3695119.jpg",
+      "plu": 3695119,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 29.99,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 29336,
+      "name": "БЗМЖ Коктейль молочный ул/паст.дет.со вкусом клубники и банана 2.3% 200г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/4046388.jpg",
+      "plu": 4046388,
+      "promo": {
+        "id": 1142237059,
+        "date_begin": "2020-11-01",
+        "date_end": "2020-12-01",
+        "type": "",
+        "description": "",
+        "kind": "Z011",
+        "expired_at": 13
+      },
+      "current_prices": {
+        "price_reg__min": 29.99,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    },
+    {
+      "id": 34679,
+      "name": "АКТИМ.Прод.к/м клуб/бан.с 3лет 2,5% 100г",
+      "mech": null,
+      "img_link": "https://media.5ka.ru/media/products/3433170.jpg",
+      "plu": 3433170,
+      "promo": {
+        "id": 1146515369,
+        "date_begin": "2020-11-17",
+        "date_end": "2020-11-23",
+        "type": "",
+        "description": "",
+        "kind": "Z001",
+        "expired_at": 5
+      },
+      "current_prices": {
+        "price_reg__min": 21.65,
+        "price_promo__min": 19.99
+      },
+      "store_name": null
+    }
+  ]
+}

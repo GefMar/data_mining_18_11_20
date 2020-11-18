@@ -227,3 +227,8 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .gitignore
+.idea/data_mining_18_11_20.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
