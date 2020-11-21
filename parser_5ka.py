@@ -19,6 +19,9 @@ class Parse5Ka:
         params = self.params
         while url:
             response: requests.Response = requests.get(url, params=params, headers=self.headers)
+            if response.status_code != 200:
+                pass
+
             data = response.json()
             url = data.get('next')
             if params:
