@@ -20,7 +20,7 @@ class Parser5ka:
             try:
                 response = requests.get(*args, **kwargs)
                 if response.status_code != 200:
-                    raise Exception #todo сделать класс ошибки для с статусами
+                    raise Exception  # todo сделать класс ошибки для работы со статусами
                 time.sleep(0.1)
                 return response
             # todo Обработать конкретные ошибки
@@ -75,7 +75,7 @@ class ParserCatalog(Parser5ka):
                 data["products"].extend(products)
             self.save_to_json_file(
                 data,
-                category['parent_group_name'].lower().replace(' ', '_').replace('.', '_').replace(',', '_')
+                category['parent_group_code']
             )
 
 
