@@ -23,6 +23,8 @@ class Post(Base):
     id = Column(Integer, autoincrement=True, primary_key=True, unique=True)
     url = Column(String, unique=True, nullable=False)
     title = Column(String, unique=False, nullable=False)
+    image = Column(String, unique=False, nullable=True)
+    date = Column(String, unique=False)
     writer_id = Column(Integer, ForeignKey('writer.id'))
     writer = relationship("Writer", back_populates='posts')
     tags = relationship('Tag', secondary=tag_post, back_populates='posts')

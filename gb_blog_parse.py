@@ -1,23 +1,15 @@
 import bs4
 import requests
 from urllib.parse import urljoin
-
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-import models
-
-engine = create_engine('sqlite:///gb_blog.db')
-
-models.Base.metadata.create_all(bind=engine)
-
-session_maker = sessionmaker(bind=engine)
+from database import DataBase
 
 
 class GbBlogParse:
 
-    def __init__(self, start_url):
+    def __init__(self, start_url: str, db: DataBase):
         self.start_url = start_url
         self.page_done = set()
+        self.db = db
 
     def __get(self, url) -> bs4.BeautifulSoup:
         response = requests.get(url)
@@ -48,10 +40,23 @@ class GbBlogParse:
         return posts, paginations
 
     def page_parse(self, soup, url) -> dict:
+        # контент есть тут
+        tmp = soup.find('script', attrs={'type': 'application/ld+json'}).string
+
         data = {
-            'url': url,
-            'title': soup.find('h1').text,
-            'tags': []
+            'post_data': {
+                'url': url,
+                'title': soup.find('h1').text,
+                'image': soup.find('div', attrs={'class': 'blogpost-content'}).find('img').get('src') if soup.find(
+                    'div', attrs={'class': 'blogpost-content'}).find('img') else None,
+                'date': soup.find('div', attrs={'class': 'blogpost-date-views'}).find('time').get('datetime'),
+            },
+            'writer': {'name': soup.find('div', attrs={'itemprop': 'author'}).text,
+                       'url': urljoin(self.start_url,
+                                      soup.find('div', attrs={'itemprop': 'author'}).parent.get('href'))},
+
+            'tags': [],
+
         }
         for tag in soup.find_all('a', attrs={'class': "small"}):
             tag_data = {
@@ -61,37 +66,16 @@ class GbBlogParse:
             data['tags'].append(tag_data)
         return data
 
-    def save(self, page_data:dict):
-        db = session_maker()
-        tags = []
-        for tag in page_data['tags']:
-            tmp_tag = db.query(models.Tag).filter(models.Tag.url == tag['url']).first()
-            if not tmp_tag:
-                tmp_tag = models.Tag(**tag)
-                try:
-                    db.add(tmp_tag)
-                    db.commit()
-                except Exception:
-                    db.rollback()
-            tags.append(tmp_tag)
-        tmp_post = db.query(models.Post).filter(models.Post.url == page_data['url']).first()
-        if not tmp_post:
-            tmp_post = models.Post(url=page_data['url'], title=page_data['title'])
+    def get_comments(self, comments_soup):
+        if comments_soup:
+            print(1)
 
-        tmp_post.tags.extend(tags)
-
-        try:
-            db.add(tmp_post)
-            db.commit()
-        except Exception:
-            db.rollback()
-
-
-
-
-        print(1)
+    def save(self, page_data: dict):
+        self.db.create_post(page_data)
 
 
 if __name__ == '__main__':
-    parser = GbBlogParse('https://geekbrains.ru/posts')
+    db = DataBase('sqlite:///gb_blog.db')
+    parser = GbBlogParse('https://geekbrains.ru/posts', db)
+
     parser.run()
