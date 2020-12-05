@@ -26,6 +26,7 @@ class AutoyoulaSpider(scrapy.Spider):
         'specifications':
             '//div[contains(@class, "AdvertCard_specs")]/div/div[contains(@class, "AdvertSpecs_row")]',
     }
+    
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
