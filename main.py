@@ -13,7 +13,7 @@ if __name__ == '__main__':
     crawl_settings.setmodule('gb_parse.settings')
     crawl_proc = CrawlerProcess(settings=crawl_settings)
     crawl_proc.crawl(InstagramSpider,
-                     start_hash_tags=hash_tags,
+                     tags=hash_tags,
                      login=os.getenv('INST_LOGIN'),
                      password=os.getenv('INST_PSWD'))
     crawl_proc.start()

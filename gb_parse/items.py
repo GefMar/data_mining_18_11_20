@@ -21,6 +21,7 @@ class AutoYoulaItem(scrapy.Item):
     autor = scrapy.Field()
     specifications = scrapy.Field()
 
+
 class HHVacancyItem(scrapy.Item):
     _id = scrapy.Field()
     url = scrapy.Field()
@@ -29,3 +30,18 @@ class HHVacancyItem(scrapy.Item):
     description = scrapy.Field()
     skills = scrapy.Field()
     company_url = scrapy.Field()
+
+
+class Insta(scrapy.Item):
+    _id = scrapy.Field()
+    date_parse = scrapy.Field()
+    data = scrapy.Field()
+    img = scrapy.Field()
+
+
+class InstaTag(Insta):
+    pass
+
+
+class InstaPost(Insta):
+    pass
