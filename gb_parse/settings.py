@@ -10,7 +10,7 @@
 
 BOT_NAME = 'gb_parse'
 LOG_ENABLE = True
-LOG_LEVEL = 'DEBUG'
+LOG_LEVEL = 'INFO'
 
 SPIDER_MODULES = ['gb_parse.spiders']
 NEWSPIDER_MODULE = 'gb_parse.spiders'
@@ -29,10 +29,10 @@ ROBOTSTXT_OBEY = False
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-DOWNLOAD_DELAY = 0.75
+DOWNLOAD_DELAY = 0.1
 # The download delay setting will honor only one of:
-CONCURRENT_REQUESTS_PER_DOMAIN = 8
-CONCURRENT_REQUESTS_PER_IP = 8
+CONCURRENT_REQUESTS_PER_DOMAIN = 128
+CONCURRENT_REQUESTS_PER_IP = 256
 
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = True
@@ -55,7 +55,9 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'gb_parse.middlewares.GbParseDownloaderMiddleware': 543,
+#     # 'gb_parse.middlewares.GbParseDownloaderMiddleware': 543,
+#     'rotating_proxies.middlewares.RotatingProxyMiddleware': 610,
+#     'rotating_proxies.middlewares.BanDetectionMiddleware': 620,
 # }
 
 # Enable or disable extensions
@@ -80,7 +82,7 @@ AUTOTHROTTLE_START_DELAY = 3
 AUTOTHROTTLE_MAX_DELAY = 10
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-# AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.2
 # Enable showing throttling stats for every response received:
 AUTOTHROTTLE_DEBUG = True
 
@@ -91,3 +93,4 @@ AUTOTHROTTLE_DEBUG = True
 # HTTPCACHE_DIR = 'httpcache'
 # HTTPCACHE_IGNORE_HTTP_CODES = []
 # HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+# ROTATING_PROXY_LIST_PATH = '/Users/gefest/projects/geekbrains/data_mining_18_11_20/proxies'
